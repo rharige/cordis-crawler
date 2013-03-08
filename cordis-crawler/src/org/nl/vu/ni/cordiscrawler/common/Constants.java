@@ -4,6 +4,8 @@
  */
 package org.nl.vu.ni.cordiscrawler.common;
 
+import java.io.File;
+
 /**
  *
  * @author Ravi
@@ -23,9 +25,9 @@ public class Constants {
     public static String DIR_FEED = "feed";
     
     //Log file paths
-    public static String log_feed_network = "logs\\feed_network.txt";
-    public static String log_feed_db = "logs\\feed_db.txt";
-    public static String stop_file = "logs\\stop.txt";
+    public static String log_feed_network = "logs" + File.separator + "feed_network.txt";
+    public static String log_feed_db = "logs" + File.separator + "feed_db.txt";
+    public static String stop_file = "logs" + File.separator + "stop.txt";
     
     //misc
     public static long API_DELAY = 1000;
@@ -37,8 +39,8 @@ public class Constants {
     //Project document elements
     public static String DOC_RCN = "rcn";
     
-    public static String FILE_FAIL_LIST = "logs\\failedRCNs.txt";
-    public static String FILE_INDEX = "logs\\index.txt";
+    public static String FILE_FAIL_LIST = "logs" + File.separator + "failedRCNs.txt";
+    public static String FILE_INDEX = "logs" + File.separator + "index.txt";
     public static int FLUSH_INTERVAL = 20;
     
     //SQL

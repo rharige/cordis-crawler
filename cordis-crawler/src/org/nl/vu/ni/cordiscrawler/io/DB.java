@@ -49,9 +49,6 @@ public class DB implements Out{
             log.error(ex);
         }
     }
-    public static void main(String as[]){
-        getInstance();
-    }
     @Override
     public void writeProjectFeed(ArrayList param) {
         Object params[] = param.toArray();
@@ -144,10 +141,6 @@ public class DB implements Out{
         }
 
 
-    }
-    
-    private void storePerson(String name){
-        
     }
     
     public int updateTable(ArrayList<String> fields, String SQL)throws Exception {
